@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Ivo Delev</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#form-message">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="intro">
+        <div class="info">
+          <h1>Hi,</h1>
+          <p>
+            I am Front-end Web Developer. <br />
+            Glad to see you here!
+          </p>
+          <button id="face-btn">Face reveal!</button>
+          <div class="load-border"></div>
+        </div>
+        <img src="img/photo.jpg" alt="photo_of_me" class="portrait" />
+      </div>
+      <div class="about-me-container">
+        <div class="about-me">
+          <div class="about-me-rows rows-toggles">
+            <p>Basic information</p>
+          </div>
+          <div id="panel-0" class="about-me-rows down-rows panel">
+            <ul>
+              <li>IT student</li>
+              <li>programmer</li>
+              <li>age 20</li>
+              <li>love animals</li>
+            </ul>
+          </div>
+          <div class="about-me-rows rows-toggles">
+            <p>Skills</p>
+          </div>
+          <div id="panel-1" class="about-me-rows down-rows panel">
+            <ul>
+              <li>
+                <div class="panel-elements">
+                  <p>Advanced</p>
+                  <p>HTML 5</p>
+                  <img src="img/html.png" alt="html-logo" />
+                </div>
+              </li>
+              <li>
+                <div class="panel-elements">
+                  <p>Advanced</p>
+                  <p>CSS</p>
+                  <img src="img/css.png" alt="css-logo" />
+                </div>
+              </li>
+              <li>
+                <div class="panel-elements">
+                  <p>Junior</p>
+                  <p>JavaScript</p>
+                  <img src="img/js.png" alt="js-logo" />
+                </div>
+              </li>
+              <li>
+                <div class="panel-elements">
+                  <p>Basics</p>
+                  <p>React</p>
+                  <img src="img/react.png" alt="react-logo" />
+                </div>
+              </li>
+              <li>
+                <div class="panel-elements">
+                  <p>Basics</p>
+                  <p>Tailwind</p>
+                  <img src="img/tailwind.png" alt="tailwind-logo" />
+                </div>
+              </li>
+              <li>
+                <div class="panel-elements">
+                  <p>Basics</p>
+                  <p>Node.js</p>
+                  <img src="img/node-js.svg" alt="node-logo" />
+                </div>
+              </li>
+              <li>
+                <div class="panel-elements">
+                  <p>Basics</p>
+                  <p>Next.js</p>
+                  <img src="img/nextjs.png" alt="next-logo" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="about-me-rows rows-toggles">
+            <p>Experience</p>
+          </div>
+          <div id="panel-2" class="about-me-rows down-rows panel">
+            <ul>
+              <li>
+                <div class="panel-elements">
+                  <p>> 12 months</p>
+                  <p>Full-stack Web Developer Course</p>
+                  <img src="img/devstock.jpeg" alt="devstock-logo" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- add rows if needed -->
+      </div>
+
+      <div class="breaking-container"></div>
+
+      <div class="contact-form fade-in" id="form-message">
+        <h3>Are you interested? Send me a message...</h3>
+        <form class="form-container" method="get">
+          <div class="first-info">
+            <div class="input-div">
+              <label name="firstName">First name</label>
+              <input name="firstName" placeholder="Name" type="text" />
+            </div>
+            <div class="input-div">
+              <label name="email">E-mail</label>
+              <input name="email" type="email" placeholder="example@mail.com" />
+            </div>
+          </div>
+          <div class="input-div">
+            <label name="message">Message</label>
+            <input name="message" type="text" />
+          </div>
+          <div class="check-box">
+            <label name="terms">Terms and Conditions</label>
+            <input name="checked-terms" type="checkbox" />
+          </div>
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </div>
+      <footer>
+        <div class="socials-container">
+          <div class="socials-element">
+            <a
+              href="https://www.linkedin.com/in/ivo-delev-b847b72a4/"
+              target="_blank"
+              ><img src="img/linkedin.png" alt="linkedin-logo"
+            /></a>
+          </div>
+          <div class="socials-element">
+            <a href="https://github.com/gitbozydar" target="_blank"
+              ><img src="img/github.png" alt="github-logo"
+            /></a>
+          </div>
+          <div class="socials-element">
+            <a href="https://www.instagram.com/boydrmadeit/" target="_blank"
+              ><img src="img/instagram.png" alt="instagram-logo"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
