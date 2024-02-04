@@ -39,7 +39,7 @@ rows.forEach((element, i) => {
   element.appendChild(toggleBtn);
 });
 
-const faders = document.querySelectorAll(".fade-in");
+const faders = document.querySelectorAll(".fade-in-right");
 
 const appearOptions = {
   treshhold: 1,
@@ -54,7 +54,7 @@ const appearOnScroll = new IntersectionObserver(function (
     if (!entry.isIntersecting) {
       return;
     } else {
-      entry.target.classList.add("appear");
+      entry.target.classList.add("appear-right");
       appearOnScroll.unobserve(entry.target);
     }
   });
@@ -64,3 +64,10 @@ appearOptions);
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
+
+const projectReference = document.getElementById("project-ref");
+const firstChildReference = projectReference.firstElementChild;
+firstChildReference.id = "project-ref-first-child";
+const linkToProjects = document.getElementById("projects-link");
+
+linkToProjects.setAttribute("href", "#project-ref-first-child");

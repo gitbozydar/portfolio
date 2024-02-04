@@ -18,7 +18,7 @@
     <main>
       <nav>
         <ul>
-          <li><a href="#">PROJECTS</a></li>
+          <li><a id="projects-link">PROJECTS</a></li>
           <li><a href="#">HOME</a></li>
           <li><a href="#form-message">CONTACT</a></li>
         </ul>
@@ -41,12 +41,12 @@
             <p>Basic information</p>
           </div>
           <div id="panel-0" class="about-me-rows down-rows panel">
-            <ul>
-              <li>IT student</li>
-              <li>programmer</li>
-              <li>age 20</li>
-              <li>love animals</li>
-            </ul>
+            <div class="info-basic-wrapper">
+              <span>IT student</span>
+              <span>programmer</span>
+              <span>age 20</span>
+              <span>love animals</span>
+            </div>
           </div>
           <div class="about-me-rows rows-toggles">
             <p>Skills</p>
@@ -122,10 +122,30 @@
         <!-- add rows if needed -->
       </div>
 
-      <div class="breaking-container"></div>
+      <div class="breaking-container" id="project-ref">
+        <div class="projects-container fade-in-right">
+          <h3>Car Rent App</h3>
+          <p>In process...</p>
+        </div>
+        <div class="projects-container fade-in-right">
+          <h3>Star Wars App</h3>
+          <p>
+            Application shows data about characters, planets, vehicles and
+            more...
+          </p>
+        </div>
+        <div class="projects-container fade-in-right">
+          <h3>Calculator</h3>
+          <p>Just a simple calculator, there always must be one!</p>
+        </div>
+      </div>
 
-      <div class="contact-form fade-in" id="form-message">
-        <h3>Are you interested? Send me a message...</h3>
+      <div class="contact-form fade-in-right" id="form-message">
+        <div class="projects-header">
+          <div class="project-haeder-border"></div>
+          <h6>Are you interested? Send me a message...</h6>
+        </div>
+
         <form class="form-container" method="get">
           <div class="first-info">
             <div class="input-div">
